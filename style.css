@@ -1,0 +1,161 @@
+.home-button-row {
+    display: flex;
+    gap:  2vw;
+    text-align: center;
+}
+
+.home-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    border: 1px solid #ccc;
+}
+
+.home-button img {
+    width: 30vw;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.text{
+    text-align: center;
+}
+
+/* Construction Symbol*/
+.caution-banner {
+    background-color: yellow;
+    border: 5px solid black;
+    text-align: center;
+    width: 50vw;
+    margin: auto;
+    display: flex;
+    padding: 20px;
+    font-weight: bold;
+    border-radius: 25px; /* Adjust as needed for desired roundness */
+}
+
+/* PROJECT SEARCH*/
+.search-bar {
+    border-radius: 10px;
+    background: #e9e1e1;
+    flex: 1;
+    border: 0;
+    width: 40vw;
+    outline: none;
+    font-size: 23px;
+    margin: auto;
+    text-align: center;
+    display: flex;
+}
+
+.project {
+    display: flex;
+    align-items: center;
+    background-color: #f0f0f0; /* Alternate colors for different projects */
+    border-radius: 10px;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+.project-image img {
+    width: 30vw; /* Adjust size as needed */
+    margin-right: 50px;
+}
+
+.project-info {
+    flex: 1;
+}
+
+.project-title {
+    font-weight: bold;
+    margin: 0;
+}
+
+.project-description {
+    margin: 5px 0;
+}
+
+.project-details {
+    font-size: 15px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 5%;
+}
+
+/* PROJECT PAGE*/
+.project_name {
+    font-size: 20px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.project_images {
+    display: flex;
+    justify-content: center;
+}
+
+.project_images img{
+    width: 50vw;
+}
+
+.slideshow {
+    display: flex;
+    flex-direction: row;
+}
+
+#leftArrow { order: 1;}
+#slide { order: 2;}
+#rightArrow { order: 3;}
+
+.arrow {
+    background: transparent;
+    font-size: 50px;
+    border: none;
+}
+
+.arrow:hover {
+    color: rgb(148, 139, 139);
+}
+
+/* Project Description*/
+.project_description {
+    width: 70vw;
+    justify-content: center;
+    margin: auto;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* CSS for typing animation */
+.typewriter {
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    direction: ltr;
+    text-align: left;
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+}

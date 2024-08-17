@@ -1,0 +1,73 @@
+Interactive Display of Olympic Data
+This group project involved analyzing multiple datasets and displaying
+our findings to users. I worked with three others to build an app-like 
+interface that allowed users to input arguments such as host / 
+participating countries and a year range and the findings from our 
+calculating would be shown to them. Most findings were displayed in 
+the form of bar / line graphs. The calculations we did focused on
+taking the averages between certain data from the datasets. For 
+example, 'Annual Medals' meant taking the average of the number of medals 
+received by a country each time it participated in the Olympics. From a 
+more technical perspective, the way our project functioned was by creating
+graph nodes for each country and year in the datasets. The vertices 
+connecting nodes included that country's medals in that year. The
+interface used PyGame while results of our calculations were displayed
+through the matplotlib library.
+
+Interactive Display of Olympic Data Challenges
+Time and effort required to complete
+Combining our work caused bugs
+One team member was unwell, so the rest of us completed her work
+
+Interactive Display of Olympic Data Takeaways
+Large projects need communication among team members
+To stay on schedule, make clear deadlines
+
+Business Website
+This was my first introduction to web development. I build a website for 
+an independent contractor to showcase his work. While my knowledge of HTML,
+CSS and JS was very little, I was able to make an image gallery for his work.
+A Jotform was embedded to the website, but then was taken down since it did was
+not important for the contractor.
+
+Business Website Challenges
+No previous knowledge of web dev
+Dealing with the sheer amount of images required cause logistical issues
+
+Business Website Takeaways
+Basics of HTML, CSS, and JS
+Basics of web dev
+Hosting a website
+
+Dungeon Crawl Game
+This was one of my projects for CSC111. My professor provided the basic idea
+behind a text-based game, and my partner and I made it. This project was 
+created entirely in Python and users were able to play it through the IDE's
+console. The player could move around the 'world', pick up objects to add
+in their inventory, and solve a puzzle! A limited number of moves was given
+to the player, and they had to act strategically in order to win! While this
+does not seem as significant as my other projects, it showed me how to work
+in a team to build a CS project, someone I did not have the opportunity to
+do before.
+
+Dungeon Crawl Game Challenges
+Learning how to work efficiently and productively in a team
+Learning how to use text files in programming
+
+Dungeon Crawl Game Takeaways
+Making a project is not hard, but it takes time, patience, and commitment!
+
+Pong
+This is a recreation of the original Pong arcade game. It served as my first
+introduction to lua. To make the game more interesting, I added the option
+for a player to play against AI. This project was created through CS50's 
+tutorials:
+
+Pong Challenges
+New Language
+
+Pong Takeaways
+Learnt how to use text fonts
+Learnt how to use audio, specifically .wav files
+While lua is similar to other languages like Java and Python, it does have some subtle differences
+Using Love2D makes game development so much simpler, as it runs the game for you; you just have to create the functions it calls
