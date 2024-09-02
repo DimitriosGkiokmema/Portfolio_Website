@@ -151,7 +151,8 @@ class Project {
             else if (keyword.includes('Challenges')) {
                 var displayArea = document.getElementById(container);
                 const challenges = document.createElement('h2');
-                challenges.textContent = 'Challenges'
+                challenges.textContent = 'Challenges';
+                challenges.style.textAlign = 'center';
                 var list = document.createElement('ul');
                 const listContents = this.readChallenges(lines, keyword);
 
@@ -168,6 +169,7 @@ class Project {
                 var displayArea = document.getElementById(container);
                 const takeaways = document.createElement('h2');
                 takeaways.textContent = 'Takeaways'
+                takeaways.style.textAlign = 'center';
                 var list = document.createElement('ul');
                 const listContents = this.readChallenges(lines, keyword);
 

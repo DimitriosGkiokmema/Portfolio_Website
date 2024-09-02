@@ -136,6 +136,18 @@
     padding-bottom: 10px;
 }
 
+.challenges_learnt {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    gap: 20px;
+}
+
 /* CSS for typing animation */
 .typewriter {
     overflow: hidden;
@@ -158,4 +170,28 @@
 @keyframes blink-caret {
     from, to { border-color: transparent }
     50% { border-color: orange; }
+}
+
+/* BIO PAGE*/
+.bio_intro {
+    /* display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    overflow: hidden; */
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 20px;
+}
+
+.bio_intro p{
+    /* flex: 1;
+    overflow: hidden; */
+    grid-column: 2;
+}
+
+.bio_intro img{
+    width: 200px;
+    height:auto;
+    /* margin-left: 20px; */
+    grid-row: span 2;
 }

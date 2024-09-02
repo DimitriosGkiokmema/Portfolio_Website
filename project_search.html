@@ -8,13 +8,39 @@
 </head>
 <body style="background-color: #545454;">
     <br>
-    <form action="">
-        <input class="search-bar" type="text" placeholder="search project names" name="q";>
-    </form>
-    <br>
-
+    <input class="search-bar" autocomplete="off" autofocus placeholder="search project names" type="text">
+    <ul id="search-results"></ul>
+    
     <div  id="projects-container"></div>
     <script src="project.js"></script>
+    <script>
+        let input = document.querySelector('input');
+        let PROJECTS = get_all_projects();
+        let container = document.getElementById('search-results');
+        let search_results = [];
+        input.addEventListener('keyup', function(event) {
+            let html = '';
+            if (input.value) {
+                for (proj of PROJECTS) {
+                    let title = proj.title.toLowerCase();
+                    if (title.includes(input.value.toLowerCase()) && !search_results.includes(proj.title)) {
+                        let result = document.createElement('ul');
+                        result.textContent = proj.title;
+                        search_results += proj.title;
+                        container.appendChild(result);
+                    }
+                }
+            }
+            else {
+                while (container.hasChildNodes()) {
+                    container.removeChild(container.firstChild);
+                }
+                search_results = [];
+            }
+        })
+    </script>
+
+    <br>
     <a href="index.html" class="home-button">HOME</a>
 </body>
 </html>
