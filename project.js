@@ -341,7 +341,7 @@ function typeAnimation(){
     typePhrase(); // Start the typing
 }
 
-const GIT_LINKS = {}; // Create an empty array
+const GIT_LINKS = {}; // Create an empty dictionary
 GIT_LINKS['Interactive Display of Olympic Data'] = 'Project_Two_Olympics';
 GIT_LINKS['Business Website'] = 'Extra-Miles-Website';
 GIT_LINKS['Dungeon Crawl Game'] = 'Project-One';
