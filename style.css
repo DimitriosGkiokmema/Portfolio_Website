@@ -172,26 +172,57 @@
     50% { border-color: orange; }
 }
 
-/* BIO PAGE*/
-.bio_intro {
-    /* display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    overflow: hidden; */
-    display: grid;
-    grid-template-columns: 200px 1fr;
-    gap: 20px;
+/* ACHIEVEMENTS PAGE*/
+.sectionName {
+    text-align: center;
 }
 
-.bio_intro p{
-    /* flex: 1;
-    overflow: hidden; */
-    grid-column: 2;
+.achievementsContainer {
+    display: grid;
+    grid-template-columns: [col-start] 1fr 1fr;
+    grid-template-areas:
+    "workSection workSection"
+    "volSection awaSection"
+    "volSection hackSection";
+}
+
+.workSection {
+    grid-area: workSection;
+    border-style: solid;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.volSection {
+    grid-area: volSection;
+    border-style: solid;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.awaSection {
+    grid-area: awaSection;
+    border-style: solid;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.hackSection {
+    grid-area: hackSection;
+    border-style: solid;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+/* BIO PAGE*/
+.bio_intro {
+    width: 80%;
+    margin: 0 auto;
 }
 
 .bio_intro img{
+    float: right;
+    margin: 0 15px 15px 0;
     width: 200px;
-    height:auto;
-    /* margin-left: 20px; */
-    grid-row: span 2;
+    border-radius: 50%;
 }
