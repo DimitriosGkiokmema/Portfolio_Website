@@ -8,8 +8,10 @@
 </head>
 <body style="background-color: #545454;">
     <br>
-    <input class="search-bar" autocomplete="off" autofocus placeholder="search project names" type="text">
-    <ul id="search-results"></ul>
+    <div>
+        <input class="search-bar" autocomplete="off" autofocus placeholder="search project names" type="text">
+        <ul id="search-results"></ul>
+    </div>
     
     <div  id="projects-container"></div>
     <script src="project.js"></script>
@@ -26,6 +28,7 @@
                     if (title.includes(input.value.toLowerCase()) && !search_results.includes(proj.title)) {
                         let result = document.createElement('ul');
                         result.textContent = proj.title;
+                        result.className = 'searchResult';
                         search_results += proj.title;
                         container.appendChild(result);
                     }
@@ -41,6 +44,6 @@
     </script>
 
     <br>
-    <div id="siteFooter"></div>
+    <footer id="siteFooter"></footer>
     <script src="siteFeatures.js"></script></body>
 </html>
