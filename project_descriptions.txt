@@ -47,7 +47,7 @@ console. The player could move around the 'world', pick up objects to add
 in their inventory, and solve a puzzle! A limited number of moves was given
 to the player, and they had to act strategically in order to win! While this
 does not seem as significant as my other projects, it showed me how to work
-in a team to build a CS project, someone I did not have the opportunity to
+in a team to build a CS project, something I did not have the opportunity to
 do before.
 
 Dungeon Crawl Game Challenges
