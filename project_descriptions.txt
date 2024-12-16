@@ -1,5 +1,5 @@
 Interactive Display of Olympic Data
-This group project involved analyzing multiple datasets and displaying
+This CSC111 group project involved analyzing multiple datasets and displaying
 our findings to users. I worked with three others to build an app-like 
 interface that allowed users to input arguments such as host / 
 participating countries and a year range and the findings from our 
@@ -27,8 +27,8 @@ Business Website
 This was my first introduction to web development. I build a website for 
 an independent contractor to showcase his work. While my knowledge of HTML,
 CSS and JS was very little, I was able to make an image gallery for his work.
-A Jotform was embedded to the website, but then was taken down since it did was
-not important for the contractor.
+A Jotform was embedded to the website, but then was taken down since the 
+contractor did not need such a feature.
 
 Business Website Challenges
 No previous knowledge of web dev
@@ -71,3 +71,20 @@ Learnt how to use text fonts
 Learnt how to use audio, specifically .wav files
 While lua is similar to other languages like Java and Python, it does have some subtle differences
 Using Love2D makes game development so much simpler, as it runs the game for you; you just have to create the functions it calls
+
+Spotify Companion App
+This was a group project for CSC207 in which we learnt about software development,
+Clean Architecture, and APIs. Our project uses the Microsoft Azure and Spotify APIs
+to retrieve user data and display them in an interactive way. Users also have the 
+ability to view song and artist recommendations based on their listening history,
+search songs either by keywords or a description, as well as seeing their top tracks
+and artists.
+
+Spotify Companion App Challenges
+Learning APIs and Clean Architecture
+Complexity of the project
+
+Spotify Companion App Takeaways
+APIs are extremely useful
+Large projects need a strict timeline to meet deadlines
+The earlier bugs are caught, the easier to fix them

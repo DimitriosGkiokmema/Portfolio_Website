@@ -1,14 +1,12 @@
+/* Refers to site buttons in home page*/
 .home-button-row {
     display: flex;
     gap:  2vw;
     text-align: center;
+    justify-content: center;
 }
 
 .home-button {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     padding: 10px;
     border-radius: 5px;
     background-color: #f8f9fa;
@@ -238,4 +236,24 @@
     margin: 0 15px 15px 0;
     width: 200px;
     border-radius: 50%;
+}
+
+/* siteFeatures*/
+/* FOOTER BUTTONS*/
+.siteButtons {
+    display: flex;
+    gap:  2vw;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.siteButton {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    border: 1px solid #ccc;
 }

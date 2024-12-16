@@ -1,9 +1,10 @@
 class Project {
-    constructor(title, description, images, details) {
+    constructor(title, description, images, details, link) {
         this.title = title;
         this.description = description;
         this.images = images;
         this.details = details;
+        this.link = link;
     }
 
     createProjectElement() {
@@ -135,7 +136,7 @@ class Project {
                 var displayArea = document.getElementById(container);
 
                 const git = document.createElement('a');
-                git.href = 'https://github.com/DimitriosGkiokmema/' + GIT_LINKS[this.title];                
+                git.href = 'https://github.com/DimitriosGkiokmema/' + this.link;                
                 git.textContent = 'GitHub Link';
                 git.style.display = 'block';
                 git.style.textAlign = "center";
@@ -236,25 +237,30 @@ class Project {
 }
 
 function get_all_projects() {
-    let pong_pics = ['Images/pong_main.png', 'Images/pong_in_game.png', 'Images/pong_victory.png']
+    let spotify_pics = ['Images/CSC207_project/wireframe.png', 'Images/CSC207_project/login_screen.png', 'Images/CSC207_project/home_screen.png', 'Images/CSC207_project/keyword_search.png', 'Images/CSC207_project/song_description.png', 'Images/CSC207_project/similar_artists.jpg', 'Images/CSC207_project/top_tracks.png', 'Images/CSC207_project/recommendations.png']
+    let spotify_descrpt = "Utilized numerous APIs to display a user's spotify data, recommend songs and artists, and allow users to search for songs."
+    let spotify_details = ['App', 'Java', 'December 2024']
+    let projects = [new Project('Spotify Companion App', spotify_descrpt, spotify_pics, spotify_details, 'Pong')]
+
+    let pong_pics = ['Images/pong_game_project/pong_main.png', 'Images/pong_game_project/pong_in_game.png', 'Images/pong_game_project/pong_victory.png']
     let pong_descrpt = "Followed online tutorials to recreate Pong, an old and simple arcade game. To make it more interesting, I added the option to play against AI."
     let pong_details = ['Game', 'lua', 'August 2024']
-    let projects = [new Project('Pong', pong_descrpt, pong_pics, pong_details)]
+    projects.push(new Project('Pong', pong_descrpt, pong_pics, pong_details))
 
-    let olympic_pics = ['Images/olympics_main_menu.png', 'Images/olympics_historical.png', 'Images/olympics_participation.png', 'Images/olympics_rank.png', 'Images/olympics_plot.png']
-    let olympic_dscrpt = "Analyzed various datasets concerning the Olympics and presented the results in an interactive app-like program. The datasets we used included data on past Olympic scores and country codes. Using these two datasets, I and my teamates were able to create an app-like program and displayed our results through graphs. Users were able to choose between diferent calculations, inputed host and away countries as well as year range, and the results were presented to the users through bar and line graphs"
-    let olympic_details = ['App', 'Python', 'April 2024']
-    projects.push(new Project('Interactive Display of Olympic Data', olympic_dscrpt, olympic_pics, olympic_details))
-
-    let tile_pics = ['Images/tile_website.png', 'Images/website_gallery.png']
+    let tile_pics = ['Images/tile_website_project/tile_website.png', 'Images/tile_website_project/website_gallery.png']
     let tile_descrpt = "A professional website for an independent contractor to expand his business. His main want for a website was to display his work, so I made a photo gallery in the website that showcases all his best work."
     let tile_details = ['Website', 'HTML, CSS, JS, Python', 'June 2024']
-    projects.push(new Project('Business Website', tile_descrpt, tile_pics, tile_details))
+    projects.push(new Project('Business Website', tile_descrpt, tile_pics, tile_details, 'Extra-Miles-Website'))
 
-    let text_pics = ['Images/text_game.png', 'Images/text_game_menu.png', 'Images/text_game_win.png']
+    let olympic_pics = ['Images/Olympics_project/olympics_main_menu.png', 'Images/Olympics_project/olympics_historical.png', 'Images/Olympics_project/olympics_participation.png', 'Images/Olympics_project/olympics_rank.png', 'Images/Olympics_project/olympics_plot.png']
+    let olympic_dscrpt = "Analyzed various datasets concerning the Olympics and presented the results in an interactive app-like program. The datasets we used included data on past Olympic scores and country codes. Using these two datasets, I and my teammates were able to create an app-like program and displayed our results through graphs. Users were able to choose between different calculations, inputted host and away countries as well as year range, and the results were presented to the users through bar and line graphs"
+    let olympic_details = ['App', 'Python', 'April 2024']
+    projects.push(new Project('Interactive Display of Olympic Data', olympic_dscrpt, olympic_pics, olympic_details, 'Project_Two_Olympics'))
+
+    let text_pics = ['Images/text_game_project/text_game.png', 'Images/text_game_project/text_game_menu.png', 'Images/text_game_project/text_game_win.png']
     let text_descrpt = "Developed a UofT text game. Functions as a dungeon crawl, in which the user must explore locations and collect lost items to win the game"
     let text_details = ['Game', 'Python', 'February 2024']
-    projects.push(new Project('Dungeon Crawl Game', text_descrpt, text_pics, text_details))
+    projects.push(new Project('Dungeon Crawl Game', text_descrpt, text_pics, text_details, 'Project-One'))
 
     return projects
 }
@@ -300,55 +306,51 @@ function getTextBetweenKeywords(content, keyword) {
     return result.trim(); // return trimmed result to remove any leading/trailing spaces or new lines
   }
 
-function typeAnimation(){
-    function typePhrase() {
-        if(i >= phrases.length) {
-            i = 0;
-        }
+  // Delete this chunk of code if you will not implement typewriter effect
+// function typeAnimation(){
+//     function typePhrase() {
+//         if(i >= phrases.length) {
+//             i = 0;
+//         }
 
-        var phrase = phrases[i];
-        var j = 0;
-        var interval = setInterval(function() {
-            div.textContent += phrase[j];
-            j++;
-            if(j == phrase.length) {
-                clearInterval(interval);
-                i++;
-                setTimeout(deletePhrase, 2000); // Wait for 2 seconds before deleting
-            }
-        }, 150); // Speed of typing each character
-    }
+//         var phrase = phrases[i];
+//         var j = 0;
+//         var interval = setInterval(function() {
+//             div.textContent += phrase[j];
+//             j++;
+//             if(j == phrase.length) {
+//                 clearInterval(interval);
+//                 i++;
+//                 setTimeout(deletePhrase, 2000); // Wait for 2 seconds before deleting
+//             }
+//         }, 150); // Speed of typing each character
+//     }
 
-    function deletePhrase() {
-        var phrase = div.textContent;
-        var k = 0;
-        var interval = setInterval(function() {
-            phrase = phrase.slice(0, -1);
-            div.textContent = phrase;
-            k++;
-            if(k == phrase.length) {
-                clearInterval(interval);
-                setTimeout(typePhrase, 2000); // Wait for 2 seconds before typing next phrase
-            }
-        }, 150); // Speed of deleting each character
-    }
+//     function deletePhrase() {
+//         var phrase = div.textContent;
+//         var k = 0;
+//         var interval = setInterval(function() {
+//             phrase = phrase.slice(0, -1);
+//             div.textContent = phrase;
+//             k++;
+//             if(k == phrase.length) {
+//                 clearInterval(interval);
+//                 setTimeout(typePhrase, 2000); // Wait for 2 seconds before typing next phrase
+//             }
+//         }, 150); // Speed of deleting each character
+//     }
 
-    var phrases = ['Undergrad', 'gamer', 'student']; // Add more phrases if you want
-    var i = 0;
-    var div = document.getElementById('typewriter');
+//     var phrases = ['Undergrad', 'gamer', 'student']; // Add more phrases if you want
+//     var i = 0;
+//     var div = document.getElementById('typewriter');
     
 
-    typePhrase(); // Start the typing
-}
-
-const GIT_LINKS = {}; // Create an empty dictionary
-GIT_LINKS['Interactive Display of Olympic Data'] = 'Project_Two_Olympics';
-GIT_LINKS['Business Website'] = 'Extra-Miles-Website';
-GIT_LINKS['Dungeon Crawl Game'] = 'Project-One';
-GIT_LINKS['Pong'] = 'Pong';
+//     typePhrase(); // Start the typing
+// }
 
 // Project page
 if(document.getElementById('projects-container') != null){
+    // Displays projects in search page
     // Get the container where you want to add the projects
     const container = document.getElementById('projects-container');
 
@@ -368,6 +370,7 @@ else if(document.getElementById('typewriter') != null) {
     //typeAnimation();
 }
 else if(document.getElementById('project-page') != null) {
+    // Actual project page
     // Get the container where you want to add the projects
     const container = document.getElementById('project-page');
 
