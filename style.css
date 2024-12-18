@@ -293,3 +293,7 @@
     font-size: 16px;
     border: 1px solid #ccc;
 }
+
+.siteButton:hover {
+    background-color: darkgrey;
+}
