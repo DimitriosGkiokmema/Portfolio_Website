@@ -253,7 +253,7 @@ function get_all_projects() {
     projects.push(new Project('Business Website', tile_descrpt, tile_pics, tile_details, 'Extra-Miles-Website'))
 
     let olympic_pics = ['Images/Olympics_project/olympics_main_menu.png', 'Images/Olympics_project/olympics_historical.png', 'Images/Olympics_project/olympics_participation.png', 'Images/Olympics_project/olympics_rank.png', 'Images/Olympics_project/olympics_plot.png']
-    let olympic_dscrpt = "Analyzed various datasets concerning the Olympics and presented the results in an interactive app-like program. The datasets we used included data on past Olympic scores and country codes. Using these two datasets, I and my teammates were able to create an app-like program and displayed our results through graphs. Users were able to choose between different calculations, inputted host and away countries as well as year range, and the results were presented to the users through bar and line graphs"
+    let olympic_dscrpt = "Analyzed various datasets concerning the Olympics and presented the results in an interactive app. Users are able to filter the data and have it be displayed as bar or line graphs"
     let olympic_details = ['App', 'Python', 'April 2024']
     projects.push(new Project('Interactive Display of Olympic Data', olympic_dscrpt, olympic_pics, olympic_details, 'Project_Two_Olympics'))
 
