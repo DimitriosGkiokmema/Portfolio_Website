@@ -6,11 +6,23 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css">
     <title>About Me</title>
+
+    <script>
+        // Function to update the content of the <p> tag
+        function updateParagraph() {
+            const text = getText('bio.txt').then(txt => {
+                document.getElementById("output").innerText = txt; // Update the <p> tag content
+                console.log(txt);
+            });
+        }
+    </script>
 </head>
-<body style="background-color: #545454;">
-    <div class="bio_intro">
-        <img src="Images/Professional Headshot.JPG">
-        <p class="intro_text">Hello my name is Dimitrios, I am a second year Computer Science Specialist student at the University of Toronto. I first became interested in CS back in high school which lead me to take AP Computer Science A. It was then that I found just how influential and impactful CS is in today's world, which fostered my deep love and passion for the subject. This website is a way for me to show that passion, showcase my progress, and display my improvements of in the field of Computer Science over the years.</p>
+<body onload="updateParagraph()" style="background-color: #545454;">
+    <h1 style="justify-content: center; display: flex; padding: 20px">About Me</h1>
+    <div class="bio_intro" style="padding: 50px;">
+        <img src="Images/Scenic Headshot.jpg">
+
+        <p class="intro_text" id="output">This should not be displayed</p>
     </div>
 
     <h1 style="justify-content: center; display: flex;">Contact</h1>

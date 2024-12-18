@@ -41,6 +41,14 @@ function createFooter() {
     }
 }
 
+function getText(file) {
+    return fetch(file)
+        .then(response => response.text())
+        .then(text => {
+            return text.split('\n').join(' ');
+    });
+}
+
 if (document.getElementById('siteFooter') != null) {
     createFooter();
 }
