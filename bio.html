@@ -11,8 +11,7 @@
         // Function to update the content of the <p> tag
         function updateParagraph() {
             const text = getText('bio.txt').then(txt => {
-                document.getElementById("output").innerText = txt; // Update the <p> tag content
-                console.log(txt);
+                document.getElementById("output").textContent = txt; // Update the <p> tag content
             });
         }
     </script>
@@ -25,7 +24,12 @@
         <p class="intro_text" id="output">This should not be displayed</p>
     </div>
 
-    <h1 style="justify-content: center; display: flex;">Contact</h1>
+    <h1 style="justify-content: center; display: flex; padding: 20px">Skills</h1>
+     <div class="skillsSection">
+        <ul class="skillList"></ul>
+     </div>
+
+    <h1 style="justify-content: center; display: flex; padding-top: 20px">Contact</h1>
     <div class="contactSection">
         <a href="https://www.linkedin.com/in/dimitrios-gkiokmema-5558922a6/" class="fa fa-linkedin" target="_blank"></a>
         <a href="https://github.com/DimitriosGkiokmema" class="fa fa-github" target="_blank"></a>
