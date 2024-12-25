@@ -240,12 +240,12 @@ function get_all_projects() {
     let spotify_pics = ['Images/CSC207_project/wireframe.png', 'Images/CSC207_project/login_screen.png', 'Images/CSC207_project/home_screen.png', 'Images/CSC207_project/keyword_search.png', 'Images/CSC207_project/song_description.png', 'Images/CSC207_project/similar_artists.jpg', 'Images/CSC207_project/top_tracks.png', 'Images/CSC207_project/recommendations.png']
     let spotify_descrpt = "Utilized numerous APIs to display a user's spotify data, recommend songs and artists, and allow users to search for songs."
     let spotify_details = ['App', 'Java', 'December 2024']
-    let projects = [new Project('Spotify Companion App', spotify_descrpt, spotify_pics, spotify_details, 'Pong')]
+    let projects = [new Project('Spotify Companion App', spotify_descrpt, spotify_pics, spotify_details, 'CSC207-Project')]
 
     let pong_pics = ['Images/pong_game_project/pong_main.png', 'Images/pong_game_project/pong_in_game.png', 'Images/pong_game_project/pong_victory.png']
     let pong_descrpt = "Followed online tutorials to recreate Pong, an old and simple arcade game. To make it more interesting, I added the option to play against AI."
     let pong_details = ['Game', 'lua', 'August 2024']
-    projects.push(new Project('Pong', pong_descrpt, pong_pics, pong_details))
+    projects.push(new Project('Pong', pong_descrpt, pong_pics, pong_details, 'Pong'))
 
     let tile_pics = ['Images/tile_website_project/tile_website.png', 'Images/tile_website_project/website_gallery.png']
     let tile_descrpt = "A professional website for an independent contractor to expand his business. His main want for a website was to display his work, so I made a photo gallery in the website that showcases all his best work."
