@@ -49,6 +49,34 @@ function getText(file) {
     });
 }
 
+function createSkills() {
+    fetch('skills.csv')
+    .then(response => response.text())
+    .then(text => {
+        const rows = text.split('\n');
+        const file = rows.map(row => row.split(','));
+        var displayArea = document.getElementById('skillsSection');
+
+        file.forEach((line) => {
+            var list = document.createElement('ul');
+            list.classList = 'skillList';
+
+            line.forEach((skill) => {
+                if (skill != '') {
+                    var listItem = document.createElement('li');
+                    listItem.textContent = skill;
+                    list.appendChild(listItem);
+                }
+            });
+
+            displayArea.appendChild(list);
+        });
+    })
+}
+
 if (document.getElementById('siteFooter') != null) {
     createFooter();
+}
+if (document.getElementById('skillsSection') != null) {
+    createSkills();
 }

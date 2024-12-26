@@ -297,3 +297,20 @@
 .siteButton:hover {
     background-color: darkgrey;
 }
+
+/* SKILLS */
+#skillsSection {
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#skillsSection img{
+    width: 100px;
+}
+
+.skillList {
+    flex: 1 1 250px; /* Grow to fill space, minimum width of 250px */
+    max-width: 250px;
+}
