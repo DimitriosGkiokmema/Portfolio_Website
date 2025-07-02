@@ -1,9 +1,0 @@
-Hello my name is Dimitrios, I am a second year Computer Science
-Specialist student at the University of Toronto. I first became
-interested in CS back in high school which lead me to take AP
-Computer Science A. It was then that I found just how influential
-and impactful CS is in today's world, which fostered my deep love
-and passion for the subject. This website is a way for me to show
-that passion, showcase my progress, and display my improvements of
-in the field of Computer Science over the years.
-        

@@ -2,68 +2,219 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- settings-->
-    <meta name="keywords" content="Dimitrios Gkiokmema, dimitrios gkiokmema">  <!-- helps search engine find website -->
-    <meta name="description" content="...">                  <!-- TO DO: description for web browser -->
+    <meta name="viewport" content="width=13, initial-scale=1.0">
+    <title>Dimitrios Portfolio Website</title>
     <link rel="stylesheet" href="style.css">
-    <title>Dimitrios Gkiokmema</title>
+    <script src="https://kit.fontawesome.com/d082821527.js" crossorigin="anonymous"></script>
 </head>
-<header class="text" width="auto" style="background-color: rgb(26, 106, 197);">
-</header> <!-- TO DO -->
-<body style="background-color: rgb(147, 153, 156);">
-    <div  style="text-align: center;">
-        <p>Hello There!</p>
-        <p>I'm Dimitrios Gkiokmema</p>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="Images/Olympics_project/medal_compare.png" class="logo">
+
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+
+                    <i class="fas fa-times" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openMenu()"></i>
+            </nav>
+
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi, I'm <span>Dimitrios</span><br>Gkiokmema from Toronto</h1>
+            </div>
+        </div>
+    </div>
+    
+    <!--     About     -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="Images/headshot1.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello my name is Dimitrios, I am a third year Computer Science Specialist student at the University of Toronto. I first became interested in CS back in high school which lead me to take AP Computer Science A. It was then that I found just how influential and impactful CS is in today's world, which fostered my deep love and passion for the subject. This website is a way for me to show that passion, showcase my progress, and display my improvements of in the field of Computer Science over the years.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                            <li><span>Web Development</span><br>Web app Development</li>
+                            <li><span>App Development</span><br>Designing Android/iOS apps</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023 - Current</span><br>Lead App Developer</li>
+                            <li><span>2023 - 2024</span><br>Student Leader at UofT</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2023 - 2027</span><br>BS in Computer Science from UofT</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    <div class="typewriter" id = "typewriter"></div>
-    <script src="project.js"></script>
-
-    <div class="caution-banner">
-        <p>Caution: This website is still in development, so not all features will work!</p>
+    <!-------------- Services ----------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem ipsa deserunt culpa possimus labore mollitia quis ullam ratione similique ut!</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-object-ungroup"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem ipsa deserunt culpa possimus labore mollitia quis ullam ratione similique ut!</p>
+                    <a href="#">learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-laptop-code"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorem ipsa deserunt culpa possimus labore mollitia quis ullam ratione similique ut!</p>
+                    <a href="#">learn more</a>
+                </div>
+            </div>
+        </div>
     </div>
-    <br>
 
-    <div class="home-button-row">
-        <a href="project_search.html" class="home-button">
-            <img src="Images/code symbol.jpg" alt="icon" />
-            <span style="font-size: 40px;">Projects</span>
-            <div>A comprehensive list of the major projects I have previously worked on!</div>
-        </a>
-        <a href="achievements.html" class="home-button">
-            <img src="Images/briefcase symbol.jpg" alt="icon" />
-            <span style="font-size: 40px;">Achievements</span>
-            <div>Work and volunteer experience, scholarships, awards</div>
-        </a>
-        <a href="bio.html" class="home-button">
-            <img src="Images/Professional Headshot.JPG" alt="icon" />
-            <span style="font-size: 40px;">Meet Dimitrios</span>
-        </a>
+    <!-------------- Portfolio ----------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Images/CSC207_project/home_screen.png">
+                    <div class="layer">
+                        <h3>Spotify App</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro laborum itaque magnam. Placeat, dignissimos deleniti!</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/Olympics_project/olympics_main_menu.png">
+                    <div class="layer">
+                        <h3>Data Engineering</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro laborum itaque magnam. Placeat, dignissimos deleniti!</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/tile_website_project/website_gallery.png">
+                    <div class="layer">
+                        <h3>Business Website</h3>
+                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Porro laborum itaque magnam. Placeat, dignissimos deleniti!</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-------------------- Contact ------------------------>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> contact@example.com</p>
+                    <p><i class="fa-solid fa-phone"></i> 123456789</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <!-- TODO: Change below img to my resume -->
+                    <a href="Images/CSC207_project/home_screen.png" download class="btn btn2">Download Resume</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="copyright">
+            <p>Copyright &copy; Dimitrios</p>
+        </div> -->
     </div>
 </body>
+<script>
+    var tabLinks = document.getElementsByClassName("tab-links");
+    var tabContents = document.getElementsByClassName("tab-contents");
 
-<!--
-Purpose of Website:
-- Show off my CS skills
-- Display my projects in an interactive way
-- Include a short description for each project, challenges, things learnt
-- Over the years, this website will show my progression from first year UofT
+    function opentab(tab) {
+        for (tabLink of tabLinks) {
+            tabLink.classList.remove("active-link");
+        }
 
-I don't want this to be boring, I want to impress people with it
-I'm thinking make it like a video game, with a menu for people to select,
-the 'levels' will be my projects over the years.
+        for (tabContent of tabContents) {
+            tabContent.classList.remove("active-tab");
+        }
 
-Here is the hierarchy of my website:
-Menu:
-Projects:
-    Gallery / list of my projects, with a pick for each:
-        Clicked to view description, challenges, things learnt, and hopefully, something interactive
-        (if the project is a game / small application, try to make it accessible in the site or post git link)
-Achievements
-    Awards / Work Experience and roles. No need to be too specific, just briefly state 'I worked at
-    <company> as a <role> and worked on <job responsibilities>'
-    Would this be a privacy issue?
-Credits:
-        Bio about me, my education, interests, etc.
--->
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tab).classList.add("active-tab")
+    }
+</script>
+<script>
+    var sideMenu = document.getElementById("sidemenu");
+
+    function openMenu() {
+        sideMenu.style.right = "0";
+    }
+
+    function closeMenu() {
+        sideMenu.style.right = "-200px";
+    }
+</script>
+<script>
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwwW9xDZG4kcUcbKrONbOkW1WpGKXIAkiuSBv6XH9zeJOuiwmIAz0AJXEJNMLjq4FTpHg/exec'
+  const form = document.forms['submit-to-google-sheet']
+  const msg = document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML = "Message sent successfully"
+
+        setTimeout(function() {
+            msg.innerHTML = ""
+        }, 5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
 </html>
