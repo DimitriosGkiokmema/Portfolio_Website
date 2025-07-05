@@ -1,0 +1,9 @@
+title,description,img,link
+Spotify Companion App,"Utilized numerous APIs to display a user's spotify data, recommend songs and artists, and allow users to search for songs.",spotify_app.png,CSC207-Project
+Data Engineering App,"Analyzed various datasets concerning the Olympics and presented the results in an interactive app.",olympics_data.png,Project_Two_Olympics
+Business Website,"A professional website which uses a backend node.js server to retrieve images securely from an API.",,Extra-Miles-Website
+Pong,"Followed online tutorials to recreate Pong, an old and simple arcade game. To make it more interesting, I added the option to play against AI.",pong.png,Pong
+Text Adventure Game,"Developed a UofT text game. Functions as a dungeon crawl, in which the user must explore locations and collect lost items.",text_game.png,Project-One
+Game Tournament Leaderboard,"Created a responsive website to display the leaderboard for a video game tournament I hosted at my college.",,SwitchCup
+Data Visualization Sites,"Utilized large datasets to create numerous websites which displayed the data through line graphs, 3D globes, maps",,CSC316
+Assembly Dr. Mario,"Developed a fully functioning Dr. Mario game completely in vanilla assembly.",,Assembly Dr. Mario
