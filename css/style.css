@@ -26,15 +26,15 @@ body {
     padding: 10px 10%;
 }
 
+.logo {
+    width: 140px;
+}
+
 nav {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-end;
     flex-wrap: wrap;
-}
-
-.logo {
-    width: 140px;
 }
 
 nav ul li {

@@ -2,11 +2,11 @@
     loadData();
 
     class Project {
-        constructor(title, description, img, link) {
+        constructor(title, description, img, git) {
             this.title = title;
             this.description = description;
             this.img = img;
-            this. link = link;
+            this. git = git;
 
             this.createCard();
         }
@@ -24,10 +24,12 @@
             content.textContent = this.description;
             var extLink = document.createElement("a")
 
-            if (this.link == "CSC316") {
+            if (this.git == "CSC316") {
                 extLink.href = "https://gitfront.io/r/dimi/vmp8rGamzort/CSC316-Assignments/";
+            } else if (this.git == "Vascular") {
+                extLink.href = "https://github.com/nathanbowley98/vascularSurgeryApp";
             } else {
-                extLink.href = "https://github.com/DimitriosGkiokmema/" + this.link;
+                extLink.href = "https://github.com/DimitriosGkiokmema/" + this.git;
             }
 
             var icon = document.createElement("i");
@@ -46,6 +48,6 @@
     function loadData() {
         // Creating elements
         d3.csv("data/projects.csv", row => {
-            new Project(row.title, row.description, row.img, row.link)
+            new Project(row.title, row.description, row.imgLink, row.gitLink)
         })
     }
