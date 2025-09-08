@@ -2,6 +2,7 @@ title,description,imgLink,gitLink
 Spotify Companion App,"Utilized numerous APIs to display a user's spotify data, recommend songs and artists, and allow users to search for songs.",https://ik.imagekit.io/dimi/Portfolio/spotify_app.png,CSC207-Project
 Business Website,"A professional website which uses a backend node.js server to retrieve images securely from an API.",https://ik.imagekit.io/dimi/Portfolio/businessSite.png,Extra-Miles-Website
 Android App,"Created a full-stack Android app to help train future healthcare professionals on vascular surgery.","https://ik.imagekit.io/dimi/Portfolio/app_demo.png?tr=w-600,h-400",Vascular
+Land of The Lost,"A retro style 2D rpg game with combat, collectables, score, and intelligent bosses through the A Star algorithm.",https://github.com/DimitriosGkiokmema/gameDev/blob/main/assets/images/game_screen.png?raw=true,gameDev
 Data Engineering App,"Analyzed various datasets concerning the Olympics and presented the results in an interactive app.",https://ik.imagekit.io/dimi/Portfolio/olympics_data.png,Project_Two_Olympics
 Data Visualization Project,"Created a website to interactively display a large dataset of Canadian alien reports using D3.js, bootstrap, and the leaflet API.",https://ik.imagekit.io/dimi/Portfolio/316_project.png,CSC316-Project
 Assembly Dr. Mario,"Developed a fully functioning Dr. Mario game completely in vanilla assembly.",https://ik.imagekit.io/dimi/Portfolio/drMario.png,Assembly Dr. Mario
