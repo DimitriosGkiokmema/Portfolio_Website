@@ -1,7 +1,8 @@
 title,description,imgLink,gitLink
 Spotify Companion App,"Utilized numerous APIs to display a user's spotify data, recommend songs and artists, and allow users to search for songs.",https://ik.imagekit.io/dimi/Portfolio/spotify_app.png,CSC207-Project
-Business Website,"A professional website which uses a backend node.js server to retrieve images securely from an API.",https://ik.imagekit.io/dimi/Portfolio/businessSite.png,Extra-Miles-Website
+Loyalty Program,"Developed a full stack React site for a loyalty program. Integrated communication between frontend and backend via APIs and an external Prisma database server.",https://github.com/DimitriosGkiokmema/CSC309-A2/blob/main/screenshots/profile.png?raw=true,CSC309-A2
 Android App,"Created a full-stack Android app to help train future healthcare professionals on vascular surgery.","https://ik.imagekit.io/dimi/Portfolio/app_demo.png?tr=w-600,h-400",Vascular
+Business Website,"A professional website which uses a backend node.js server to retrieve images securely from an API.",https://ik.imagekit.io/dimi/Portfolio/businessSite.png,Extra-Miles-Website
 Weather App, "Created a web app to allow for users to view weather data of any location. A three day forecast allows users to view future temperatures at the selected location.","https://github.com/DimitriosGkiokmema/Weather_App/blob/main/images/webpage.jpeg?raw=true",Weather_App
 Land of The Lost,"A retro style 2D rpg game with combat, collectables, score, and intelligent bosses through the A Star algorithm.",https://github.com/DimitriosGkiokmema/gameDev/blob/main/assets/images/game_screen.png?raw=true,gameDev
 Data Engineering App,"Analyzed various datasets concerning the Olympics and presented the results in an interactive app.",https://ik.imagekit.io/dimi/Portfolio/olympics_data.png,Project_Two_Olympics
