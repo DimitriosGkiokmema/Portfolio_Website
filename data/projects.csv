@@ -1,14 +1,15 @@
 title,description,imgLink,gitLink
-Spotify Companion App,"Utilized numerous APIs to display a user's spotify data, recommend songs and artists, and allow users to search for songs.",https://ik.imagekit.io/dimi/Portfolio/spotify_app.png,CSC207-Project
+Korotu Technologies App,"A Bird Diversity Analysis App using the EBird API. Users can see and filter a map of global avian data.",https://ik.imagekit.io/dimi/Portfolio/301Project.png,project-the-sheeps
+Medical App,"Created a full-stack Android app to help train future healthcare professionals on vascular surgery.","https://ik.imagekit.io/dimi/Portfolio/app_demo.png?tr=w-600,h-400",Vascular
 Loyalty Program,"Developed a full stack React site for a loyalty program. Integrated communication between frontend and backend via APIs and an external Prisma database server.",https://github.com/DimitriosGkiokmema/CSC309-A2/blob/main/screenshots/profile.png?raw=true,CSC309-A2
-Android App,"Created a full-stack Android app to help train future healthcare professionals on vascular surgery.","https://ik.imagekit.io/dimi/Portfolio/app_demo.png?tr=w-600,h-400",Vascular
 Business Website,"A professional website which uses a backend node.js server to retrieve images securely from an API.",https://ik.imagekit.io/dimi/Portfolio/businessSite.png,Extra-Miles-Website
-Weather App, "Created a web app to allow for users to view weather data of any location. A three day forecast allows users to view future temperatures at the selected location.","https://github.com/DimitriosGkiokmema/Weather_App/blob/main/images/webpage.jpeg?raw=true",Weather_App
-Land of The Lost,"A retro style 2D rpg game with combat, collectables, score, and intelligent bosses through the A Star algorithm.",https://github.com/DimitriosGkiokmema/gameDev/blob/main/assets/images/game_screen.png?raw=true,gameDev
-Data Engineering App,"Analyzed various datasets concerning the Olympics and presented the results in an interactive app.",https://ik.imagekit.io/dimi/Portfolio/olympics_data.png,Project_Two_Olympics
-Data Visualization Project,"Created a website to interactively display a large dataset of Canadian alien reports using D3.js, bootstrap, and the leaflet API.",https://ik.imagekit.io/dimi/Portfolio/316_project.png,CSC316-Project
-Assembly Dr. Mario,"Developed a fully functioning Dr. Mario game completely in vanilla assembly.",https://ik.imagekit.io/dimi/Portfolio/drMario.png,CSC258_Dr_Mario
+Spotify Companion App,"Utilized numerous APIs to display a user's spotify data, recommend songs and artists, and allow users to search for songs.",https://ik.imagekit.io/dimi/Portfolio/spotify_app.png,CSC207-Project
 Data Visualization Sites,"Utilized large datasets to create numerous websites which displayed the data through line graphs, 3D globes, maps, and everything in between!",https://ik.imagekit.io/dimi/Portfolio/316_assignments.png,CSC316
+Data Visualization Project,"Created a website to interactively display a large dataset of Canadian alien reports using D3.js, bootstrap, and the leaflet API.",https://ik.imagekit.io/dimi/Portfolio/316_project.png,CSC316-Project
+Weather App, "Created a web app to allow for users to view weather data of any location. A three day forecast allows users to view future temperatures at the selected location.","https://github.com/DimitriosGkiokmema/Weather_App/blob/main/images/webpage.jpeg?raw=true",Weather_App
+Data Engineering App,"Analyzed various datasets concerning the Olympics and presented the results in an interactive app.",https://ik.imagekit.io/dimi/Portfolio/olympics_data.png,Project_Two_Olympics
+Land of The Lost,"A retro style 2D rpg game with combat, collectables, score, and intelligent bosses through the A Star algorithm.",https://github.com/DimitriosGkiokmema/gameDev/blob/main/assets/images/game_screen.png?raw=true,gameDev
+Assembly Dr. Mario,"Developed a fully functioning Dr. Mario game completely in vanilla assembly.",https://ik.imagekit.io/dimi/Portfolio/drMario.png,CSC258_Dr_Mario
 Game Tournament Leaderboard,"Created a website to display the leaderboard for a video game tournament I hosted at my college.",https://ik.imagekit.io/dimi/Portfolio/switchCup.png,SwitchCup
 Text Adventure Game,"Developed a UofT text game. Functions as a dungeon crawl, in which the user must explore locations and collect lost items.",https://ik.imagekit.io/dimi/Portfolio/text_game.png,Project-One
 Pong,"Followed online tutorials to recreate Pong, an old and simple arcade game. Developed AI and two-player modes.",https://ik.imagekit.io/dimi/Portfolio/pong.png,Pong

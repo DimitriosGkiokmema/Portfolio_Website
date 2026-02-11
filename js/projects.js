@@ -24,7 +24,9 @@
             content.textContent = this.description;
             var extLink = document.createElement("a")
 
-            if (this.git == "CSC316") {
+            if (this.git == "project-the-sheeps") {
+                extLink.href = "https://github.com/csc301-2026-s/project-the-sheeps"
+            } else if (this.git == "CSC316") {
                 extLink.href = "https://gitfront.io/r/dimi/vmp8rGamzort/CSC316-Assignments/";
             } else if (this.git == "Vascular") {
                 extLink.href = "https://github.com/nathanbowley98/vascularSurgeryApp";
